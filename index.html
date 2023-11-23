@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery-throttle-debounce.js"></script>
+    <script src="scripts/theme.js"></script>
+    <link
+      href="fonts/format-fonts.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/more-format-fonts.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <script type="text/javascript">
+      try {
+        function css_browser_selector(u) {
+          var ua = u.toLowerCase(),
+            is = function (t) {
+              return ua.indexOf(t) > -1;
+            },
+            g = "gecko",
+            w = "webkit",
+            s = "safari",
+            o = "opera",
+            m = "mobile",
+            h = document.documentElement,
+            b = [
+              !/opera|webtv/i.test(ua) && /msie\s(\d)/.test(ua)
+                ? "ie ie" + RegExp.$1
+                : is("firefox/2")
+                ? g + " ff2"
+                : is("firefox/3.5")
+                ? g + " ff3 ff3_5"
+                : is("firefox/3.6")
+                ? g + " ff3 ff3_6"
+                : is("firefox/3")
+                ? g + " ff3"
+                : is("gecko/")
+                ? g
+                : is("opera")
+                ? o +
+                  (/version\/(\d+)/.test(ua)
+                    ? " " + o + RegExp.$1
+                    : /opera(\s|\/)(\d+)/.test(ua)
+                    ? " " + o + RegExp.$2
+                    : "")
+                : is("konqueror")
+                ? "konqueror"
+                : is("blackberry")
+                ? m + " blackberry"
+                : is("android")
+                ? m + " android"
+                : is("chrome")
+                ? w + " chrome"
+                : is("iron")
+                ? w + " iron"
+                : is("applewebkit/")
+                ? w +
+                  " " +
+                  s +
+                  (/version\/(\d+)/.test(ua) ? " " + s + RegExp.$1 : "")
+                : is("mozilla/")
+                ? g
+                : "",
+              is("j2me")
+                ? m + " j2me"
+                : is("iphone")
+                ? m + " iphone"
+                : is("ipod")
+                ? m + " ipod"
+                : is("ipad")
+                ? m + " ipad"
+                : is("mac")
+                ? "mac"
+                : is("darwin")
+                ? "mac"
+                : is("webtv")
+                ? "webtv"
+                : is("win")
+                ? "win" + (is("windows nt 6.0") ? " vista" : "")
+                : is("freebsd")
+                ? "freebsd"
+                : is("x11") || is("linux")
+                ? "linux"
+                : "",
+              "js",
+            ];
+          c = b.join(" ");
+          h.className += " " + c;
+          return c;
+        }
+        css_browser_selector(navigator.userAgent);
+      } catch (e) {}
+    </script>
+  </head>
+  <header class="header show-header">
+    <div class="menu-outer">
+      <div class="menu-inner">
+        <div class="header-logo-container">
+          <h1 class="logo">
+            <a href="/">sam kamiel</a>
+          </h1>
+
+          <button
+            class="hamburger mobile-menu-trigger"
+            type="button"
+            aria-label="Menu"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <div class="header-items-container">
+          <nav class="menu">
+            <ul class="menu-links fade-links">
+              <li class="category show-link">
+                <a class="category-link"
+                  ><!--?xml version="1.0" encoding="UTF-8"?-->
+                  <svg
+                    class="arrow"
+                    width="21px"
+                    height="11px"
+                    viewBox="0 0 21 11"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="arrow"
+                        class="arrow"
+                        transform="translate(10.500000, 5.500000) rotate(180.000000) translate(-10.500000, -5.500000) translate(0.000000, -1.000000)"
+                        fill="#000000"
+                        fill-rule="nonzero"
+                      >
+                        <g
+                          id="angle-down"
+                          transform="translate(10.500000, 6.500000) rotate(-180.000000) translate(-10.500000, -6.500000) translate(0.000000, -0.000000)"
+                        >
+                          <path
+                            d="M15.6030474,7.48995199 L7.30304737,16.089952 C7.05421987,16.3518472 6.70880106,16.5001284 6.34754737,16.5001284 C5.98629367,16.5001284 5.64087486,16.3518472 5.39204737,16.089952 C4.864174,15.5351147 4.864174,14.6637893 5.39204737,14.108952 L12.7370474,6.49995199 L5.39704737,-1.10904801 C4.869174,-1.66388527 4.869174,-2.53521074 5.39704737,-3.09004801 C5.64587486,-3.35194323 5.99129367,-3.50022437 6.35254737,-3.50022437 C6.71380106,-3.50022437 7.05921987,-3.35194323 7.30804737,-3.09004801 L15.6080474,5.50995199 C16.1357936,6.0644535 16.1357936,6.93545049 15.6080474,7.48995199 L15.6030474,7.48995199 Z"
+                            id="Path"
+                            transform="translate(10.500000, 6.499952) rotate(90.000000) translate(-10.500000, -6.499952) "
+                          ></path>
+                        </g>
+                      </g>
+                    </g></svg
+                  >work</a
+                >
+                <ul class="category-list collapsed fade-links">
+                  <li class="item">
+                    <a href="#"> project 1 </a>
+                  </li>
+
+                  <li class="item">
+                    <a href="#"> project 2 </a>
+                  </li>
+
+                  <li class="item">
+                    <a href="#"> project 3 </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item after-category show-link">
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="social-wrap">
+            <div class="footer">Copyright © All rights reserved.</div>
+
+            <nav class="social">
+              <div class="social-link">
+                <a href="#" target="_blank" title="Instagram">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-70 -150 1000 1000"
+                    class="social-icon"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M571 500q0-59-41-101t-101-42-101 42-42 101 42 101 101 42 101-42 41-101zm77 0q0 91-64 156t-155 64-156-64-64-156 64-156 156-64 155 64 64 156zm61-229q0 21-15 36t-37 15-36-15-15-36 15-36 36-15 37 15 15 36zM429 148H327l-54 2-57 5-40 11q-28 11-49 32t-33 49q-6 16-10 40t-6 58-1 53 0 59 0 43 0 43 0 59 1 53 6 58l10 40q12 28 33 49t49 32q16 6 40 11t57 5 54 2 59 0 43 0 42 0 59 0 54-2 58-5 39-11q28-11 50-32t32-49q6-16 10-40t6-58 1-53 0-59 0-43 0-43 0-59-1-53-6-58l-10-40q-11-28-32-49t-50-32q-16-6-39-11t-58-5-54-2-59 0-42 0zm428 352q0 128-3 177-5 116-69 180t-179 69q-50 3-177 3t-177-3q-116-6-180-69T3 677q-3-49-3-177t3-177q5-116 69-180t180-69q49-3 177-3t177 3q116 6 179 69t69 180q3 49 3 177z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <main
+      class="container show-container"
+      style="margin-left: 314px; padding-top: 0px; min-height: 100vh"
+    >
+      content here
+    </main>
+  </body>
+</html>
