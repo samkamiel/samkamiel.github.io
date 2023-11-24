@@ -1,0 +1,11 @@
+.slide-image-with-caption {
+  display: inline-grid;
+  justify-items: center;
+  font-style: italic;
+  font-weight: 100;
+  font-size: small;
+
+  > p {
+    margin-top: 20px;
+  }
+}
