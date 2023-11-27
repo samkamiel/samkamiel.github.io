@@ -19,5 +19,7 @@ body.gallery .asset.text .text-wrap,
 
   > p {
     margin-top: 20px;
+    width: 65%;
+    text-align: center;
   }
 }
