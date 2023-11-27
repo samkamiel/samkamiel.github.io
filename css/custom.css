@@ -1,3 +1,15 @@
+body.gallery .asset.text .text-wrap,
+.menu li.category > a,
+.menu li > a {
+  color: darkslategray;
+}
+
+.menu li > a {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .slide-image-with-caption {
   display: inline-grid;
   justify-items: center;
