@@ -1,11 +1,117 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+@font-face {
+  font-family: Mukti;
+  src: url("/fonts/mukti.otf") format("opentype");
+}
+
+/* @font-face {
+  font-family: "Mukti";
+  font-weight: bold;
+  src: local("Mukti"), url("/fonts/muktibold.otf") format("opentype");
+} */
+
+.header:not(.mobile-menu) a.header-logo-text,
+.header.mobile-menu .logo a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-text {
+  font-family: Mukti;
+  color: #b1a084;
+}
+
 h1 {
-  color: darkslategray;
+  font-size: 35.3px;
+}
+
+.header:not(.mobile-menu) a.header-logo-text {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #b1a084;
+}
+
+.menu li.category > a,
+.menu li > a,
+.menu li.category > a:hover,
+.menu li.item > a:hover {
+  font-family: "Montserrat", sans-serif;
+  color: #b1a084;
+}
+
+.header:not(.mobile-menu).show-header {
+  position: absolute;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-row {
+  width: 46%;
+  margin-right: 25px;
 }
 
 body.gallery .asset.text .text-wrap,
-.menu li.category > a,
-.menu li > a {
-  color: darkslategray;
+p,
+.quote-container {
+  font-family: "Montserrat", sans-serif;
+  color: #b1a084;
+}
+
+.quote-container > .quote {
+  font-style: italic;
+  font-size: 26px;
+  text-align: center;
+  > p {
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+}
+
+p.subtitle {
+  font-weight: 500;
+  color: #b1a084;
+}
+
+.header.mobile-menu .logo {
+  margin: 0;
+  display: inline-flex;
+}
+
+.bio-pic-container {
+  display: grid !important;
+}
+
+.quote-container {
+  display: inline-grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.header.mobile-menu .header-logo-container {
+  display: inline-flex;
+  align-items: center;
+  position: inherit;
+  height: 68px;
+}
+
+.header.mobile-menu .subtitle {
+  margin-right: 20px;
 }
 
 .menu li > a {
@@ -18,7 +124,6 @@ body.gallery .asset.text .text-wrap,
   display: inline-grid;
   justify-items: center;
   font-style: italic;
-  font-weight: 100;
   font-size: small;
 
   > p {
@@ -62,5 +167,18 @@ body.gallery .asset.text .text-wrap,
     bottom: 200px;
     left: 200px;
     top: 400px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .bio-table {
+    flex-wrap: wrap;
+
+    .slide-image-with-caption {
+      display: none;
+    }
+  }
+  body.gallery .asset.text .text-wrap.bio-table {
+    height: 100vh;
   }
 }

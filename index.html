@@ -11,7 +11,7 @@
     <script src="scripts/ls.parent-fit.min.js"></script>
     <script src="scripts/ls.respimg.min.js"></script>
     <script src="scripts/theme.js"></script>
-    <link
+    <!-- <link
       href="fonts/format-fonts.css"
       media="screen"
       rel="stylesheet"
@@ -22,7 +22,7 @@
       media="screen"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/share_panel.css" />
     <link rel="stylesheet" href="css/protected_images.css" />
@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="css/client.css" />
     <link rel="stylesheet" href="css/ss-standard.css" />
     <link rel="stylesheet" href="css/client_modal.css" />
-    <link rel="stylesheet" href="css/custom.css" />
 
     <script type="text/javascript">
       //<![CDATA[
@@ -52,8 +51,7 @@
           category_id: null,
           dependencies: { fonts: { "4ormat": true } },
         },
-        theme: {
-        },
+        theme: { gallery_change_image_speed: "Normal" },
       };
       //]]>
     </script>
@@ -265,6 +263,8 @@
       }
     </style>
 
+    <link rel="stylesheet" href="css/custom.css" />
+
     <script type="text/javascript">
       function getUrlVars() {
         var vars = {};
@@ -352,9 +352,9 @@
         <div class="menu-inner">
           <div class="header-logo-container">
             <h1 class="logo">
-              <a href="#">sam kamiel</a>
+              <a class="header-logo-text" href="#">sam kamiel</a>
             </h1>
-
+            <p class="subtitle">brand strategist & integrated marketer</p>
             <button
               class="hamburger mobile-menu-trigger"
               type="button"
@@ -384,14 +384,14 @@
                         id="Page-1"
                         stroke="none"
                         stroke-width="1"
-                        fill="none"
+                        fill="#b1a084"
                         fill-rule="evenodd"
                       >
                         <g
                           id="arrow"
                           class="arrow"
                           transform="translate(10.500000, 5.500000) rotate(180.000000) translate(-10.500000, -5.500000) translate(0.000000, -1.000000)"
-                          fill="#000000"
+                          fill="##b1a084"
                           fill-rule="nonzero"
                         >
                           <g
@@ -420,18 +420,6 @@
                     <li class="item">
                       <a href="#">p3</a>
                     </li>
-
-                    <li class="item">
-                      <a href="#">p4</a>
-                    </li>
-
-                    <li class="item">
-                      <a href="#">p5</a>
-                    </li>
-
-                    <li class="item">
-                      <a href="#">p6</a>
-                    </li>
                   </ul>
                 </li>
 
@@ -444,7 +432,7 @@
             <div class="social-wrap">
               <div class="footer">Copyright © All rights reserved.</div>
 
-              <nav class="social">
+              <!-- <nav class="social">
                 <div class="social-link">
                   <a href="#" target="_blank" title="Instagram">
                     <svg
@@ -459,7 +447,7 @@
                     </svg>
                   </a>
                 </div>
-              </nav>
+              </nav> -->
             </div>
           </div>
         </div>
@@ -475,58 +463,6 @@
       </script> -->
       <div class="assets-grid-wrapper">
         <div class="assets-grid">
-          <div class="asset image" data-asset-index="0">
-            <div class="image-wrap">
-              <div class="image-wrap-inner">
-                <img
-                  class="lazyload gallery-element"
-                  data-sizes="auto"
-                  width="1080"
-                  height="1350"
-                  alt=""
-                  data-src="images/headshot.png"
-                  data-srcset="images/headshot.png 1080w 1350h"
-                  data-asset-index="0"
-                  data-parent-fit="contain"
-                />
-                <canvas
-                  class="image-placeholder gallery-element"
-                  width="1080"
-                  height="1350"
-                  style="background-color: #592626"
-                ></canvas>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset text text-element" data-asset-index="1">
-            <div class="text-wrap">
-              <p>
-                <strong></strong
-                ><strong style="background-color: initial"
-                  >Hi, I’m Sam,&nbsp;</strong
-                ><strong style="background-color: initial"
-                  >your next brand and digital strategist.</strong
-                >
-              </p>
-              <p>
-                  I began my strategic path in social media management,
-                  learning the foundations of consumer habits. Moving into
-                  integrated communications (digital, media, social,
-                  influencer), I tied that knowledge of habitual behaviour into
-                  an understanding of the consumer’s journey.
-              </p>
-              <br />
-              <div class="slide-image-with-caption">
-                <img alt="" src="images/audi.png" width="400px" />
-                <p>
-                  New approach to Audi Canada’s social that ignited the passions
-                  of auto fanatics everywhere.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div class="asset image" data-asset-index="2">
             <div class="image-wrap">
               <div class="image-wrap-inner">
@@ -551,27 +487,83 @@
             </div>
           </div>
 
-          <div class="asset text text-element" data-asset-index="3">
+          <div class="asset text text-element" data-asset-index="1">
             <div class="text-wrap">
-              <p>Spending the last few years in brand strategy, I am equipped with a toolbox of digital, brand and integrated comms strategies to
-                  craft killer insights and solve business needs.
-              </p>
-              <p>
-                <strong
-                  >My goal is to uncover strategies that help brands cultivate a community by weaving brands into our everyday lives.</strong
-                >
-              </p>
+              <h1 class="header-text">
+                Hi, I’m Sam, your next brand and integrated strategist.
+              </h1>
+              <!-- <p>
+                I began my strategic path in social media management, learning
+                the foundations of consumer habits. Moving into integrated
+                communications (digital, media, social, influencer), I tied that
+                knowledge of habitual behaviour into an understanding of the
+                consumer’s journey.
+              </p> -->
               <br />
-              <div class="slide-image-with-caption">
-                <img alt="" src="images/harley-davidson.png" width="350px" />
-                <p>
-                  Created a docu-series for Harley-Davidson’s 100th anniversary that invited riders from around the world to explore Canada.
-                </p>
+              <h2>My bread &amp; butter:</h2>
+              <ul class="bio-right">
+                <li>Strategic planning & creative briefs</li>
+                <li>Brand marketing</li>
+                <li>Integrated comms</li>
+                <li>Consumer journey mapping</li>
+                <li>Multicutural marketing</li>
+                <li>Social media and Influencer</li>
+                <li>Data analytics</li>
+              </ul>
+              <br />
+              <div class="slide-image-with-caption bio-pic-container">
+                <img alt="" src="images/bio-headshot.png" width="400px" />
               </div>
-          </div>
+            </div>
           </div>
 
-          <div class="asset image" data-asset-index="4">
+          <!-- <div class="asset image" data-asset-index="0">
+            <div class="image-wrap">
+              <div class="image-wrap-inner">
+                <img
+                  class="lazyload gallery-element"
+                  data-sizes="auto"
+                  width="1080"
+                  height="1350"
+                  alt=""
+                  data-src="images/headshot.png"
+                  data-srcset="images/headshot.png 1080w 1350h"
+                  data-asset-index="0"
+                  data-parent-fit="contain"
+                />
+                <canvas
+                  class="image-placeholder gallery-element"
+                  width="1080"
+                  height="1350"
+                  style="background-color: #592626"
+                ></canvas>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="asset text text-element" data-asset-index="3">
+            <div class="text-wrap quote-container">
+              <span class="quote">
+                <strong>Brands are systems</strong>
+                <p>
+                  The strength of a brand is in its network of connected parts.
+                  WHEN WE WEAVE ALL ELEMENTS OF A BRAND INTO THE FABRIC OF OUR
+                  DAILY ROUTINE, AN AD CAN BECOME A LIFESTYLE.
+                </p>
+              </span>
+              <br />
+              <span class="slide-image-with-caption">
+                <img alt="" src="images/harley-davidson.png" width="350px" />
+                <p>
+                  To entice more Canadians to ride, we created a docuseries for
+                  Harley Davidson's 100th anniversary featuring riders from
+                  around the world.
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="asset image" data-asset-index="4">
             <div class="image-wrap">
               <div class="image-wrap-inner">
                 <img
@@ -593,53 +585,128 @@
                 ></canvas>
               </div>
             </div>
+          </div> -->
+
+          <div class="asset text text-element" data-asset-index="4">
+            <div class="text-wrap">
+              <h1 class="header-text">Services:</h1>
+              <br />
+              <div class="services">
+                <div class="service-row">
+                  <div class="service">
+                    <div class="quote-container">
+                      <span class="quote" style="font-style: inherit">
+                        <p>Strategy & Campaign</p>
+                      </span>
+                    </div>
+                    <p>
+                      To me, strategic success isn't just about attention, but
+                      leaving an undeniable mark. I believe strategy is the
+                      dynamic art of forging emotional connection between your
+                      target audience and product and I always strive for briefs
+                      that don’t skimp on creativity.
+                    </p>
+                  </div>
+                  <div class="service">
+                    <div class="quote-container">
+                      <span class="quote" style="font-style: inherit">
+                        <p>Digital</p>
+                      </span>
+                    </div>
+                    <p>
+                      My goal is to always create content that doesn't skimp on
+                      creativity. Digital extensions provide a dynamic avenue
+                      for expanding the campaign's lifespan. By standing out
+                      with content, your community will remember, talk and
+                      share.
+                    </p>
+                  </div>
+                </div>
+                <div class="service-row">
+                  <div class="service">
+                    <div class="quote-container">
+                      <span class="quote" style="font-style: inherit">
+                        <p>Integrated Comms</p>
+                      </span>
+                    </div>
+                    <p>
+                      I see integrated communications as the heartbeat of a
+                      brand's storytelling. A symphony of diverse channels
+                      coming together to create a powerful and resonant
+                      narrative. For me , it's not just about conveying a
+                      message; it's about orchestrating a seamless and immersive
+                      brand experience.
+                    </p>
+                  </div>
+                  <div class="service">
+                    <div class="quote-container">
+                      <span class="quote" style="font-style: inherit">
+                        <p>Influencer</p>
+                      </span>
+                    </div>
+                    <p>
+                      In a world inundated with content, I see influencer
+                      marketing as a catalyst for genuine, lasting connections
+                      between brands and their audience. Influencer content
+                      should spark a conversations that echos the hearts of
+                      consumers. It's the art of transforming a brand message
+                      into a shared experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="asset text text-element" data-asset-index="5">
-             <div class="text-wrap bio-table">
+            <div class="text-wrap">
+              <h1 class="header-text">Latest work:</h1>
+              <br /><br /><br />
+              <span class="slide-image-with-caption">
+                <img alt="" src="images/brands.png" width="700px" />
+              </span>
+            </div>
+          </div>
+
+          <!-- <div class="asset text text-element" data-asset-index="5">
+            <div class="text-wrap bio-table">
               <span>
-                  <h1>
-                    Background
-                  </h1>
-                  <ul class="bio-left">
-                    <li>
-                      <p class="title">Cossette</p>
-                      <p class="subtitle">Senior Strategist,  Jan 202 &ndash; present</p>
-                    </li>
-                    <li>
-                      <p class="title">Momentum Worldwide</p>
-                      <p class="subtitle">Senior Digital Strategist, 2021 &ndash; 2023</p>
-                      <p class="subtitle">Digital Strategist, 2020 &ndash; 2021</p>
-                    </li>
-                    <li>
-                      <p class="title">TAXI Agency</p>
-                      <p class="subtitle">Content Strategist, 2018 &ndash; 2020</p>
-                    </li>
-                    <li>
-                      <p class="title">Zulu Alpha Kilo</p>
-                      <p class="subtitle">Community Manager 2016 &ndash; 2018</p>
-                    </li>
-                  </ul>
-                </span>
-                <span>
-                  <h1>My bread &amp; butter</h1>
-                  <ul class="bio-right">
-                    <li>
-                      Strategic planning & creative briefs
-                    </li>
-                    <li>Brand marketing</li>
-                    <li>Integrated comms</li>
-                    <li>Multicutural marketing</li>
-                    <li>Social media and Influencer</li>
-                    <li>Data analytics</li>
-                  </ul>
-                </span>
+                <h1>Background</h1>
+                <ul class="bio-left">
+                  <li>
+                    <p class="title">Cossette</p>
+                    <p class="subtitle">
+                      Senior Strategist, Jan 202 &ndash; present
+                    </p>
+                  </li>
+                  <li>
+                    <p class="title">Momentum Worldwide</p>
+                    <p class="subtitle">
+                      Senior Digital Strategist, 2021 &ndash; 2023
+                    </p>
+                    <p class="subtitle">
+                      Digital Strategist, 2020 &ndash; 2021
+                    </p>
+                  </li>
+                  <li>
+                    <p class="title">TAXI Agency</p>
+                    <p class="subtitle">
+                      Content Strategist, 2018 &ndash; 2020
+                    </p>
+                  </li>
+                  <li>
+                    <p class="title">Zulu Alpha Kilo</p>
+                    <p class="subtitle">Community Manager 2016 &ndash; 2018</p>
+                  </li>
+                </ul>
+              </span>
 
               <div class="slide-image-with-caption">
                 <img alt="" src="images/bio-headshot.png" width="350px" />
               </div>
-              </div>
-              <br />
+            </div>
+            <br />
+          </div> -->
         </div>
       </div>
     </main>

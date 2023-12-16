@@ -46,8 +46,8 @@ h6 {
 }
 
 body:not(.content) h2 {
-  color: #506c4b;
-  font-family: "Poppins Medium", sans-serif;
+  /* color: #506c4b;
+  font-family: "Poppins Medium", sans-serif; */
   font-size: 24px;
   font-style: normal;
   font-weight: normal;
