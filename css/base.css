@@ -128,6 +128,7 @@ body.gallery .assets-grid {
   height: 100vh;
   margin-left: 0;
   transition: margin-left 500ms ease;
+  min-width: auto !important;
 }
 @media only screen and (max-width: 850px) {
   body.gallery .assets-grid {
