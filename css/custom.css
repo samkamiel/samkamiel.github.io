@@ -19,7 +19,8 @@ h3,
 h4,
 h5,
 h6,
-.header-text {
+.header-text,
+.footer {
   font-family: Mukti;
   color: #b1a084;
 }
@@ -99,6 +100,10 @@ h1 {
   margin-bottom: 50px;
 }
 
+ul {
+  margin-block-start: 0px;
+}
+
 @media only screen and (min-width: 1024px) {
   .lp-services {
     width: 100vh !important;
@@ -110,6 +115,13 @@ h1 {
   .latest-work {
     /* width: 140vw !important; */
     top: -80px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -255,10 +267,6 @@ p.subtitle {
   }
 }
 
-.harley-logo img {
-  margin-top: -17px;
-}
-
 @media only screen and (max-width: 850px) {
   .bio-table {
     flex-wrap: wrap;
@@ -283,9 +291,9 @@ p.subtitle {
     display: none;
   }
 
-  .bio-pic-container > img {
+  /* .bio-pic-container > img {
     width: 300px !important;
-  }
+  } */
 
   .lp-services,
   .latest-work {
@@ -340,4 +348,18 @@ p.subtitle {
   .buick-logo img {
     width: 80px !important;
   }
+}
+
+.hamburger-box {
+  width: 25px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  position: fixed;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #b1a084 !important;
 }
